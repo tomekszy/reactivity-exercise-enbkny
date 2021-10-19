@@ -1,0 +1,55 @@
+* {
+  font-family: Lato;
+}
+
+%center {
+  margin-left: 20%;
+}
+
+body .container {
+  width: 300px;
+  @extend %center;
+  font-family: Lato;
+}
+
+.row {
+  display: flex;
+  color: darkblue;
+}
+
+.col-1 {
+  flex: 1;
+  padding: 5px;
+  color: darkblue;
+}
+
+.col-2 {
+  flex: 2;
+  padding: 5px;
+  color: darkblue;
+  input {
+    font-family: "Courier New", Courier, monospace;
+  }
+}
+
+.btn {
+  &-primary {
+    &-small {
+      height: 2 * 14px;
+    }
+  }
+}
+
+.align-right {
+  text-align: right;
+  float: right;
+  color: darkblue;
+}
+
+#price {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.row:nth-child(3) .col-1.align-right {
+  font-weight: bold;
+}
